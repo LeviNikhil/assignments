@@ -33,7 +33,8 @@ function calculateTotalSpentByCategory(transactions)
     indexes2 = output.length;
     for (let j = 0; j < indexes2; j++)
     {
-      if (transactions[i]["category"] == output[j]["category"]) {
+      if (transactions[i]["category"] == output[j]["category"])
+      {
         // "category" already exists in "output";
         // I need to update the "price" to sum of existing & new.
         output[j]["totalSpent"] = output[j]["totalSpent"] + transactions[i]["price"];

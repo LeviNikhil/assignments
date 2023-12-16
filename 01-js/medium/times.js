@@ -8,6 +8,17 @@ Hint - use Date class exposed in JS
 There is no automated test for this one, this is more for you to understand time goes up as computation goes up
 */
 
-function calculateTime(n) {
-    return 0.01;
+function calculateTime(n)
+{
+    // Create a new Date object with the current date and time
+    const currentDate = new Date();
+
+    // Display the current date and time
+    console.log(currentDate);
+
+    // Format the date and time as a string
+    const formattedDateTime = currentDate.toLocaleString();
+
+    // Display the formatted date and time
+    console.log(formattedDateTime);
 }
